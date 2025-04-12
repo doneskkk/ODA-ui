@@ -6,7 +6,10 @@ import LanguageSwitcher from "../common/LanguageSwitcher";
 function Verification() {
   const { t } = useTranslation();
   const [idno, setIdno] = useState("");
-  
+
+
+
+
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">

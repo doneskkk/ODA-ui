@@ -8,7 +8,7 @@ import { Check, X, ChevronUp, ChevronDown } from "lucide-react";
 
 const BusinessEligibility = () => {
   const location = useLocation();
-  const [idno, setIdno] = useState("");
+  const [msign, setMsign] = useState("");
   const [eligibilityData, setEligibilityData] = useState([]);
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -23,7 +23,7 @@ const BusinessEligibility = () => {
 
   const fetchEligibility = async (idno) => {
     try {
-      const response = await axios.get(`http://localhost:8080/oda/api/personjurid/${idno}`);
+      const response = await axios.get(`http://localhost:8080/oda/api/login?msign=${msign}`);
       setEligibilityData(response.data || []);
     } catch (error) {
       console.error("Error fetching eligibility:", error);
@@ -106,4 +106,3 @@ const BusinessEligibility = () => {
 };
 
 export default BusinessEligibility;
-2

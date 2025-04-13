@@ -13,7 +13,7 @@ const initI18n = async () => {
             auth: {
               verification: {
                 eligibility: "Проверка права на участие",
-                idno: "Введите IDNO, чтобы проверить право на участие в программах поддержки бизнеса.",
+                idno: "Введите Msign, чтобы проверить право на участие в программах поддержки бизнеса.",
                 verifyBtn: "Проверить",
                 eligible: "Правомочно",
                 companyYear: "Возраст компании",
@@ -30,7 +30,7 @@ const initI18n = async () => {
             auth: {
               verification: {
                 eligibility: "Verificarea eligibilității",
-                idno: "Introduceți IDNO pentru a verifica eligibilitatea pentru programele de sprijin pentru afaceri.",
+                idno: "Introduceți Msign pentru a verifica eligibilitatea pentru programele de sprijin pentru afaceri.",
                 verifyBtn: "Verifică",
                 eligible: "Eligibil",
                 companyYear: "Vârsta companiei",
@@ -47,7 +47,7 @@ const initI18n = async () => {
             auth: {
               verification: {
                 eligibility: "Eligibility Check",
-                idno: "Enter your IDNO to check eligibility for business support programs.",
+                idno: "Enter Msign to check eligibility for business support programs.",
                 verifyBtn: "Verify",
                 eligible: "Eligible",
                 companyYear: "Company Age",

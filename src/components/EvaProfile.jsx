@@ -5,14 +5,6 @@ import {
   Info,
   User,
   Users,
-  Home,
-  Car,
-  CreditCard,
-  AlertTriangle,
-  FileText,
-  Map,
-  Briefcase,
-  Heart,
   BriefcaseBusiness,
 } from "lucide-react";
 
@@ -22,7 +14,6 @@ export default function GovernmentPortal() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Header */}
       <header className="bg-blue-600 text-white p-2 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <img
@@ -64,12 +55,7 @@ export default function GovernmentPortal() {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
+                <img src={User} alt="" />
               </svg>
             </button>
           </div>
@@ -101,11 +87,7 @@ export default function GovernmentPortal() {
           {/* Profile Card */}
           <div className="mb-6 border rounded-lg overflow-hidden">
             <div className="p-4 flex items-center gap-3">
-              <img
-                src="/api/placeholder/80/80"
-                alt="Profile"
-                className="w-16 h-16 rounded-full"
-              />
+              <User size={40} className="text-blue-600" />
               <div>
                 <h3 className="font-bold text-lg">Vasile Schidu</h3>
                 <button className="text-blue-600 text-xs">
@@ -193,74 +175,8 @@ export default function GovernmentPortal() {
             </div>
 
             <div className="p-2">
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <svg
-                  className="w-5 h-5 text-blue-600"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    d="M19.5 14c0 4-6.5 7-9.5 7s-9.5-3-9.5-7c0-3 2-5 5-6 3-1 6-4 7-6 1 2 4 5 7 6 3 1 5 3 5 6z"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                </svg>
-                <span className="text-sm">Sănătate</span>
-              </button>
 
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <CreditCard size={18} className="text-blue-600" />
-                <span className="text-sm">Plăți</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <FileText size={18} className="text-blue-600" />
-                <span className="text-sm">Situația fiscală</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <Home size={18} className="text-blue-600" />
-                <span className="text-sm">Bunuri imobile</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <Car size={18} className="text-blue-600" />
-                <span className="text-sm">Transport</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <CreditCard size={18} className="text-blue-600" />
-                <span className="text-sm">Istorie de credit</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100 bg-red-50 text-red-600">
-                <AlertTriangle size={18} className="text-red-600" />
-                <span className="text-sm">Contravenții</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <FileText size={18} className="text-blue-600" />
-                <span className="text-sm">
-                  Istoricul accesării datelor personale
-                </span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <Map size={18} className="text-blue-600" />
-                <span className="text-sm">Electorală</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <Briefcase size={18} className="text-blue-600" />
-                <span className="text-sm">Afaceri</span>
-              </button>
-
-              <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
-                <Users size={18} className="text-blue-600" />
-                <span className="text-sm">Prestații sociale CNAS</span>
-              </button>
+              
 
               <button className="w-full text-left p-2 rounded flex items-center gap-2 hover:bg-gray-100">
                 <BriefcaseBusiness size={18} className="text-blue-600" />
@@ -275,6 +191,8 @@ export default function GovernmentPortal() {
           <h1 className="text-2xl font-semibold mb-6">
             Bună dimineața, Vasile! 👋
           </h1>
+
+
 
           <div className="grid grid-cols-2 gap-6">
             

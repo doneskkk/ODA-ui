@@ -5,11 +5,7 @@ import LanguageSwitcher from "../common/LanguageSwitcher";
 
 function Verification() {
   const { t } = useTranslation();
-  const [idno, setIdno] = useState("");
-
-
-
-
+  const [msign, setMsign] = useState("");
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
@@ -28,12 +24,12 @@ function Verification() {
         <div className="flex items-center mb-6 border-b overflow-hidden">
           <input
             type="text"
-            placeholder="IDNO"
-            value={idno}
-            onChange={(e) => setIdno(e.target.value)}
+            placeholder="Msignature ID"
+            value={msign}
+            onChange={(e) => setMsign(e.target.value)}
             className="flex-grow p-3 outline-none text-xl"
           />
-          <Link to={`/eligibility?idno=${idno}`}>
+          <Link to={`/auth?msign=${msign}`}>
             <button className="bg-blue-600 text-white rounded-2xl px-6 py-2 font-bold mr-2 hover:bg-white hover:text-black border-2 md:hover:scale-110 transition-all duration-300 ease-in-out">
               {t("auth.verification.verifyBtn")}
             </button>
